@@ -1,0 +1,147 @@
+/* 
+color red spfc { #fe0000 };
+color details gray { #D2E4D6 };
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+
+@font-face {
+    font-family: 'Manufaktur';
+    src: local('Manufaktur Bold'),
+    url(../Manufaktur-Bold/Manufaktur-Bold.woff) format('woff');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    font-family: 'Manrope';
+}
+
+.principal {
+    background-image: url(../assets/imgs/back3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #bf0000;
+    box-shadow: 0px 1px 20px 5px #8d0000b6;
+    color: #EFFDF6;
+    font-family: 'Manufaktur';
+}
+
+header .logo {
+    width: 50px;
+    margin: 0 10px 0 20px;
+}
+
+header h2 {
+    width: 80%;
+    padding-bottom: 8px;
+    font-size: 25px;
+}
+
+header nav {
+    width: 30%;
+}
+
+header ul {
+    display: flex;
+    height: 80%;
+    list-style: none;
+    justify-content: space-around;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+}
+header ul :hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.frase_principal{
+    width: 60%;
+    height: 100%;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.frase_principal h1 {
+    width: 80%;
+}
+
+.intro {
+    display: flex;
+    width: 100%;
+    height: 468px;
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+}
+
+.sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../assets/imgs/670454.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: inset 0px 5px 50px 10px #000000;
+}
+
+.sobre h1 {
+    text-align: center;
+    font-family: 'Bungee Shade', cursive;
+    text-shadow: ;
+    color: white;
+    font-size: 40px;
+    margin-top: 30px;
+}
+
+.texto_sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.797);
+    width: 70%;
+    height: 500px;
+    border-radius: 20px;
+    margin-bottom: 100px;
+}
+
+.texto_sobre .frase_impacto {
+    color: white;
+    padding: 0 60px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.texto_sobre .text {
+    color: white;
+    padding: 0 60px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 2.5;
+}
+
+.texto_sobre .logo {
+    width: 50px;
+    margin: 30px 0;
+}
+

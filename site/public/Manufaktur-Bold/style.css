@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Manufaktur';
+    src: local('Manufaktur Bold'), local('Manufaktur-Bold'),
+        url('Manufaktur-Bold.woff2') format('woff2'),
+        url('Manufaktur-Bold.woff') format('woff'),
+        url('Manufaktur-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }

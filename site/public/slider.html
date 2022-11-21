@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="slider">
+        <div class="slides">
+            <input type="radio" name="radioBtn" id="radio1" onclick="stopAutoSlider()">
+            <input type="radio" name="radioBtn" id="radio2" onclick="stopAutoSlider()">
+            <input type="radio" name="radioBtn" id="radio3" onclick="stopAutoSlider()">
+            <div class="first slide">
+                <div class="first text">
+                    <p>O maior campeão do mundo no Brasil é o São Paulo Futebol</p>
+                </div>
+            </div>
+            <div class="second slide">
+                <div class="second text">
+                    <p>O maior campeão do mundo no Brasil é o São Paulo Futebol Clube</p>
+                </div>
+            </div>
+            <div class="third slide">
+                <div class="third text">
+                    <p>O maior campeão do mundo no Brasil é o São Paulo</p>
+                </div>
+            </div>
+
+            <div class="autoNavigation">
+                <div class="autoBtn1"></div>
+                <div class="autoBtn2"></div>
+                <div class="autoBtn3"></div>
+            </div>
+        </div>
+
+        <div class="manualNavigation">
+            <label for="radio1" class="manualBtn"></label>
+            <label for="radio2" class="manualBtn"></label>
+            <label for="radio3" class="manualBtn"></label>
+        </div>
+    </div>
+</body>a
+</html>
+
+
+<script>
+    var sliderCount = 1;
+    document.getElementById('radio1').checked = true;
+
+    var sliderInterval = setInterval(function(){
+        nextImageOfTheSlider()
+    }, 2000);
+
+    function nextImageOfTheSlider() {
+        sliderCount++;
+        if (sliderCount > 3) {
+            sliderCount = 1;
+        }
+
+        document.getElementById('radio' + sliderCount).checked = true;
+    }
+
+    function stopAutoSlider() {
+        clearInterval(sliderInterval)
+    }
+</script>

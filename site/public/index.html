@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>São Paulo Mania</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="assets/imgs/Brasao_do_Sao_Paulo_Futebol_Clube.svg.png" class="logo">
+            <h2>SÃO PAULO MANIA</h2>
+            <nav>
+                <ul>
+                    <li><a href="cadastro.html">Entrar / Registrar-se</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="principal">
+            <section class="intro">
+                <div class="frase_principal">
+                    <h1>"DENTRE OS GRANDES, ÉS O PRIMEIRO!"</h1>
+                </div>
+            </section>
+        </div>  
+        <section class="sobre">
+            <h1>Sobre Nós</h1>
+            <div class="texto_sobre" >
+                <img src="assets/imgs/Brasao_do_Sao_Paulo_Futebol_Clube.svg.png" class="logo">
+                <p class="frase_impacto">O São Paulo Mania foi criado para unir todos os apaixonados pelo maior clube do Brasil. <br> Se você é um fanático, seu lugar é aqui. Seja muito bem-vindo!</p>
+                <br>
+                <p class="text">Aqui temos curiosidades, notícias e muito mais sobre o São Paulo Futebol Clube. <br>Além de ser um portal do clube, possuímos também algumas interações para os usuários, onde vocês poderão compartilhar experiências e ideias, além de um Super Quiz sobre a história do Clube para testar seus conhecimentos sobre nosso clube do coração. &#10084 <br>
+                Crie sua conta e se junte à nossa comunidade, venha fazer parte da família!</p>
+            </div>
+        </section>
+        <section class="curiosidades">
+            <div class="slider">
+                <div class="slides">
+                    <input type="radio" name="radioBtn" id="radio1" onclick="stopAutoSlider()">
+                    <input type="radio" name="radioBtn" id="radio2" onclick="stopAutoSlider()">
+                    <input type="radio" name="radioBtn" id="radio3" onclick="stopAutoSlider()">
+                    <div class="first slide">
+                        <div class="first text">
+                            <p>O maior campeão do mundo no Brasil é o São Paulo Futebol</p>
+                        </div>
+                    </div>
+                    <div class="second slide">
+                        <div class="second text">
+                            <p>O maior campeão do mundo no Brasil é o São Paulo Futebol Clube</p>
+                        </div>
+                    </div>
+                    <div class="third slide">
+                        <div class="third text">
+                            <p>O maior campeão do mundo no Brasil é o São Paulo</p>
+                        </div>
+                    </div>
+                    <div class="autoNavigation">
+                        <div class="autoBtn1"></div>
+                        <div class="autoBtn2"></div>
+                        <div class="autoBtn3"></div>
+                    </div>
+                </div>
+                <div class="manualNavigation">
+                    <label for="radio1" class="manualBtn"></label>
+                    <label for="radio2" class="manualBtn"></label>
+                    <label for="radio3" class="manualBtn"></label>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <footer>
+
+    </footer>
+</body>
+</html>
+
+<script>
+        var sliderCount = 1;
+    document.getElementById('radio1').checked = true;
+
+    var sliderInterval = setInterval(function(){
+        nextImageOfTheSlider()
+    }, 2000);
+
+    function nextImageOfTheSlider() {
+        sliderCount++;
+        if (sliderCount > 3) {
+            sliderCount = 1;
+        }
+
+        document.getElementById('radio' + sliderCount).checked = true;
+    }
+
+    function stopAutoSlider() {
+        clearInterval(sliderInterval)
+    }
+</script>

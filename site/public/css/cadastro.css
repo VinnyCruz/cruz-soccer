@@ -1,0 +1,285 @@
+@font-face {
+    font-family: 'Manufaktur';
+    src: local('Manufaktur Bold'),
+    url(../Manufaktur-Bold/Manufaktur-Bold.woff) format('woff');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+.container {
+    background-image: url(../assets/imgs/gif.gif);
+    background-size: cover;
+    background-repeat: repeat-x;
+    background-position: center;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #bf0000;
+    box-shadow: 0px 1px 20px 5px #8d0000b6;
+    color: #EFFDF6;
+}
+header h2 {
+    font-family: 'Manufaktur';
+    font-size: 25px;
+}
+
+header .logo {
+    width: 40px;
+}
+
+
+/* Tela de Cadastro */
+.cad-login {
+    width: 100%;
+    height: 530px;
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+/* Caixa de Login */
+.login-box {
+    position: absolute;
+    top: 55%;
+    left: 20%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background-color: #222222f3;
+    box-shadow: -10px -10px 25px rgba(255, 255, 255, 0.671);
+    border-radius: 20px;
+    /* visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.5s, opacity 0.7s linear; */
+  }
+  
+
+
+.login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    font-family: 'Manufaktur';
+    color: white;
+    text-align: center;
+}
+
+.login-box .user-box input {
+    position: relative;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: white;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    background: transparent;
+}
+
+.login-box .user-box label {
+    position: relative;
+    left: 0;
+    top: -80px;
+    padding: 10px 0;
+    font-size: 16px;
+    color: white;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.login-box .user-box input:focus~label {
+    top: -85px;
+    left: 0;
+    color: #B11116;
+    font-size: 15px;
+}
+
+.login {
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: .5s;
+    letter-spacing: 4px;
+    border: 1px solid #B11116;
+    margin: auto;
+}
+
+.login:hover {
+    background: #B11116;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #B11116;
+    cursor: pointer;
+}
+
+.button-form {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.register {
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+    margin: auto;
+    width: 60%;
+    text-align: center;
+}
+
+.register a {
+    margin: auto;
+    color: #B11116;
+}
+
+.register a:hover {
+    text-shadow: 0 0 5px #B11116;
+}
+
+
+/* Fim da Caixa de Login */
+
+
+
+
+
+
+/* Caixa de Cadastro */
+
+.register-box {
+    position: absolute;
+    top: 55%;
+    left: 20%;
+    width: 400px;
+    padding: 25px 40px;
+    transform: translate(-50%, -50%);
+    background-color: #222222f3;
+    box-shadow: -10px -10px 25px rgba(255, 255, 255, 0.671);
+    border-radius: 20px;
+    display: none;
+  }
+  
+.register-box .topo {
+    display: flex;
+}
+
+.back-arrow {
+    margin-top: 6px;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+}
+
+.register-box h2 {
+    width: 100%;
+    margin: 0 28px 30px 0;
+    padding: 0;
+    font-family: 'Manufaktur';
+    color: white;
+    text-align: center;
+}
+
+.register-box .user-box input {
+    position: relative;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: white;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    background: transparent;
+}
+
+.register-box .user-box label {
+    position: relative;
+    left: 0;
+    top: -60px;
+    padding: 10px 0;
+    font-size: 16;
+    color: white;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.register-box .user-box input:focus~label {
+    top: -65px;
+    left: 0;
+    color: #B11116;
+    font-size: 14px;
+}
+
+.cadastrar {
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: .5s;
+    letter-spacing: 4px;
+    border: 1px solid #B11116;
+    margin: auto;
+}
+
+.cadastrar:hover {
+    background: #B11116;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #B11116;
+}
+
+.button-cad {
+    display: flex;
+}
+
+
+/* Formulário */
+.alerta_erro{
+    display: flex;
+    justify-content: center;
+}
+  
+.card_erro {
+    display: none;
+    background-color: black;
+    color: white;
+    width: 230px;
+    border-radius: 4px;
+    border: #B11116 2px solid;
+    box-shadow: 0 0 5px #B11116;
+    padding: 10px;
+}
+  
+.card_erro #mensagem_erro{
+    font-weight: 500;
+    font-size: 20px;
+}
+  
+form {
+    display: flex;
+    flex-direction: column;
+}
+  
+.loading-div {
+    width: 50px;
+    margin: auto;
+    display: none;
+}
+  
+.loading-div img {
+    height: 50px;
+    width: 50px;
+}
