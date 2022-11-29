@@ -3,8 +3,20 @@ body {
 }
 
 .curiosidades {
-    height: 500px;
+    height: 700px;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.curiosidades .tituloCuriosidades {
+    text-align: center;
+    font-family: 'Bungee Shade', cursive;
+    text-shadow: ;
+    color: white;
+    font-size: 40px;
+    margin-top: 30px;
 }
 
 .slider {
@@ -32,11 +44,46 @@ body {
 }
 
 .slide .text {
-    width: 800px;
+    width: fit-content;
+    height: 100%;
     color: white;
     display: flex;
     align-items: center;
-    justify-content: center;
+
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.267);
+}
+
+.text h1, p {
+    padding: 0 70px;
+}
+.text h1 {
+    padding-top: 20px;
+    font-size: 30px;
+}
+.text p {
+    padding-top: 50px;
+    font-size: 25px;
+}
+
+
+.first.slide{
+    background-image: url(../assets/imgs/pablo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.second.slide{
+    background-image: url(../assets/imgs/bandeira.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.third.slide{
+    background-image: url(../assets/imgs/bandeira.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .manualNavigation {
