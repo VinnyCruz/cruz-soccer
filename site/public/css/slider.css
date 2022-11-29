@@ -13,7 +13,6 @@ body {
 .curiosidades .tituloCuriosidades {
     text-align: center;
     font-family: 'Bungee Shade', cursive;
-    text-shadow: ;
     color: white;
     font-size: 40px;
     margin-top: 30px;
@@ -49,9 +48,8 @@ body {
     color: white;
     display: flex;
     align-items: center;
-
     flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.267);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .text h1, p {
@@ -80,7 +78,7 @@ body {
     background-position: center;
 }
 .third.slide{
-    background-image: url(../assets/imgs/bandeira.png);
+    background-image: url(../assets/imgs/ceni.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
